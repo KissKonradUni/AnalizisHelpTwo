@@ -2,8 +2,13 @@
     "title": "Integrálkritériumok",
     "collection": [
         {
-            "title": "welp",
-            "function": "welp"
+            "title": "Minoráns és majoráns",
+            "function": "\\begin{gather}f,g:[a, +\\infty)\\rightarrow\\mathbb{R}\\quad\\text{folytonos fv.}\\\\\n\\text{Ha }\\forall x\\in\\mathbb{R}, x\\geq a\\text{  fenáll, hogy: }0\\leq f(x)\\leq g(x),\\text{ akkor}\\\\\n\\text{ha}\\int_{a}^{+\\infty}g(x)\\space dx\\text{  konvergens, akkor }\\int_{a}^{+\\infty}f(x)\\space dx\\text{  is (majoráns)}\\\\\n\\text{ha}\\int_{a}^{+\\infty}f(x)\\space dx\\text{  divergens, akkor }\\int_{a}^{+\\infty}g(x)\\space dx\\text{  is (minoráns)}\\;\\;\\end{gather}"
+        },
+        {
+            "title": "Integrál kritérium",
+            "function": "\\begin{gather}\\text{Ha }\\sum_{n=1}^{\\infty}a_n\\text{ végtelen sor, és }f:[1, +\\infty)\\rightarrow\\mathbb{R}\\text{  monoton csökkenő folytonos függvény, ahol } f(n)=a_n, n\\in\\mathbb{N}\\text{ akkor}\\\\\n\\text{a sor akkor és csakis akkor konvergens, hogyha a belőle képzett improprius integrál is.}\\end{gather}",
+            "comment": "Remélhetőleg még emlékszel, hogy akkor konvergens egy integrál hogyha van véges értéke."
         }
     ]
 }

@@ -1,5 +1,9 @@
 /* Loading */
 
+:root {
+    --load-length: 0.1s;
+}
+
 @keyframes div-loading {
     0% {
         background-position: 0;
@@ -36,7 +40,7 @@ div.loading-marker {
     text-align: center;
     font-size: 2rem;
 
-    animation: div-loading 1s linear 0s 1 forwards;
+    animation: div-loading var(--load-length) linear 0s 1 forwards;
 }
 
 @keyframes main-loading {
@@ -54,7 +58,7 @@ main {
     flex-direction: column;
     gap: 0.5rem;
     opacity: 0;
-    animation: main-loading 0.25s ease-in-out 1s forwards;
+    animation: main-loading 0.25s ease-in-out var(--load-length) forwards;
 }
 
 header {

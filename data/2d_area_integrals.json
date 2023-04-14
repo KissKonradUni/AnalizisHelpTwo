@@ -2,8 +2,22 @@
     "title": "Területszámítás határozott integrálokkal",
     "collection": [
         {
-            "title": "welp",
-            "function": "welp"
+            "title": "Descates-koordinátás függvényekhez <math>(f(x) = x)</math>",
+            "function": "\\text{Határozott integrál. :3}"
+        },
+        {
+            "title": "Paraméteres függvények",
+            "function": "\\begin{split}\\left.\\begin{align}x=x(t)\\\\\ny=y(t)\\end{align}\\;\\right\\}\\quad t_1\\leq t \\leq t_2\\\\\n\\mu(T)=\\int_{t_1}^{t_2}y(t)\\cdot\\dot{x}(t)\\space dt\\end{split}",
+            "comment": "Az előjel függ a görbe irányítottságától. Ha negatív eredményt kaptál cseréld meg az integrálba t1 és t2-t."
+        },
+        {
+            "title": "Paraméteres függvények szektorai",
+            "function": "\\begin{split}\\left.\\begin{align}x=x(t)\\\\\ny=y(t)\\end{align}\\;\\right\\}\\quad t_1\\leq t \\leq t_2\\\\\n\\mu(S)=\\frac{1}{2}\\int_{t_A}^{t_B}(x(t)\\cdot\\dot{y}(t)-\\dot{x}(t)\\cdot y(t))\\space dt\\end{split}",
+            "comment": "Ezzel kiszámolható a teljes görbe tA és tB (radián) szögek közti területe. Hasznos lehet szimmetrikus görbék területének kiszámítására, például egy szívgörbe esetén eléggé teszi az egyik fél területének kiszámítását, és a végeredmény a szektor kétszerese lesz."
+        },
+        {
+            "title": "Polárkoordinátás görbék",
+            "function": "\\begin{gather}r=r(\\phi)\\space,\\quad \\phi_1\\leq\\phi\\leq\\phi_2\\\\\n\\mu(T)=\\frac{1}{2}\\int_{\\phi_1}^{\\phi_2}r^2(\\phi)\\space d\\phi\\end{gather}"
         }
     ]
 }

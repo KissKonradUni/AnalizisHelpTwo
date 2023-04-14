@@ -2,8 +2,28 @@
     "title": "Improprius integrálszámítás",
     "collection": [
         {
-            "title": "welp",
-            "function": "welp"
+            "title": "Pozitív végtelen",
+            "function": "\\int_{a}^{+\\infty}f(x)\\space dx=\\lim_{R\\rightarrow+\\infty}\\int_{a}^{R}f(x)\\space dx"
+        },
+        {
+            "title": "Negatív végtelen",
+            "function": "\\int_{-\\infty}^{b}f(x)\\space dx=\\lim_{r\\rightarrow-\\infty}\\int_{r}^{b}f(x)\\space dx"
+        },
+        {
+            "title": "Kettős végtelen, de folytonos",
+            "function": "\\int_{-\\infty}^{+\\infty}f(x)\\space dx=\\int_{-\\infty}^{c}f(x)\\space dx+\\int_{c}^{+\\infty}f(x)\\space dx,\\space\\text{ahol }c\\in\\mathbb{R}"
+        },
+        {
+            "title": "Szakadáspont az intervallum elején",
+            "function": "\\int_{a}^{b}f(x)\\space dx=\\lim_{\\mathcal{E}\\rightarrow0}\\int_{a+\\mathcal{E}}^{b}f(x)\\space dx"
+        },
+        {
+            "title": "Szakadáspont az intervallum végén",
+            "function": "\\int_{a}^{b}f(x)\\space dx=\\lim_{\\mathcal{E}\\rightarrow0}\\int_{a}^{b-\\mathcal{E}}f(x)\\space dx"
+        },
+        {
+            "title": "Szakadáspont az intervallumban",
+            "function": "\\begin{gather}f:[a,c)\\cup(c,b] \\rightarrow \\mathbb{R}\\\\\n\\int_{a}^{b}f(x)\\space dx=\\lim_{\\mathcal{E}_1\\rightarrow0}\\int_{a}^{c-\\mathcal{E}_1}f(x)\\space dx+\\lim_{\\mathcal{E}_2\\rightarrow0}\\int_{c+\\mathcal{E}_2}^{b}f(x)\\space dx\\end{gather}"
         }
     ]
 }

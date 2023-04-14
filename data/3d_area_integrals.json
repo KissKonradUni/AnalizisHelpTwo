@@ -2,8 +2,9 @@
     "title": "Felület számítás határozott integrálokkal",
     "collection": [
         {
-            "title": "welp",
-            "function": "welp"
+            "title": "Descates-koordinátás görbe y=f(x) esetén",
+            "function": "\\begin{gather}y=f(x)\\space,\\quad x\\in[a,b]\\\\\n \\mu(A_x)=2\\pi\\int_{a}^{b}f(x)\\cdot\\sqrt{1+(f'(x))^2}\\space dx\\quad\\text{ha}\\space f(x)\\geq 0\\end{gather}",
+            "comment": "Ez a végpontokon levő körök területét nem veszi figyelembe, azt magadnak kell hozzáadnod a végeredmény megkapásához. x=g(y)-t le tudod magadtól vezetni."
         }
     ]
 }

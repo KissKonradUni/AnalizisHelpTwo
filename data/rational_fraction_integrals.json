@@ -2,8 +2,25 @@
     "title": "Racionális törtfüggvények integrálja",
     "collection": [
         {
-            "title": "welp",
-            "function": "welp"
+            "title": "Alapeset (1)",
+            "function": "\\int \\frac{A}{ax+b}\\space dx=\\frac{A}{a}\\ln{|ax+b|}+c"
+        },
+        {
+            "title": "Alapeset (2)",
+            "function": "\\int \\frac{A}{(ax+b)^n}\\space dx=A\\int (ax+b)^{-n}\\space dx=\\frac{A}{a}\\cdot\\frac{(ax+b)^{1-n}}{1-n}+c"
+        },
+        {
+            "title": "Alapeset (3)",
+            "function": "\\int \\frac{1}{1+x^2}\\space dx=\\text{arctg x} + c"
+        },
+        {
+            "title": "Alapeset (4)",
+            "function": "\\int \\frac{1}{ax^2+bx+c} \\space dx",
+            "comment": "Három megoldása van aszerint, hogy <math>b^2 - 4ac</math> kisebb, egyenlő vagy nagyobb mint 0. Füzetvázlat segít, sok ide beírni."
+        },
+        {
+            "title": "Általános eset (polinom/polinom)",
+            "function": "\\begin{gather}\\int \\frac{Pn(x)}{Qm(x)}\\\\\nn<m\\Rightarrow\\text{Parciális törtekre bontás, Qm(x)-et felíjuk irreducibilis polinomok szorzatára}\\\\\nn\\geq m \\Rightarrow\\text{Polinomosztás, utána ha szükséges parciális törtekre bontás}\\quad\\quad\\quad\\quad\\quad\\quad\\quad\\space\\;\\end{gather}"
         }
     ]
 }

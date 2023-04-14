@@ -11,7 +11,7 @@ async function main() {
     }
     const main = document.querySelector("main");
     
-//    let c = 0;
+    let c = 0;
     dataFiles.forEach(file => {
         let element = new HTMLFoldGroup(file["title"]);
         file["collection"].forEach(line => {
@@ -50,8 +50,8 @@ async function main() {
             }
         });
         main.appendChild(element);
-//        if (c++ > 4)
-//            element.clickEvent();
+        if (c++ > 10)
+            element.clickEvent();
     });
 }
 main();

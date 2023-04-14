@@ -2,8 +2,18 @@
     "title": "Ívhossz számítás határozott integrálokkal",
     "collection": [
         {
-            "title": "welp",
-            "function": "welp"
+            "title": "Paraméteres görbékre",
+            "function": "\\begin{split}\\left.\\begin{align}x=x(t)\\\\\ny=y(t)\\end{align}\\;\\right\\}\\quad t_1\\leq t \\leq t_2\\\\\nL=\\int_{t_1}^{t_2}\\sqrt{(\\dot{x}(t))^2+(\\dot{y}(t))^2}\\space dt\\end{split}",
+            "comment": "x pötty a t-szerinti deriváltat jelöli."
+        },
+        {
+            "title": "Descates-koordinátás görbékre",
+            "function": "\\begin{gather}y=f(x)\\space,\\quad x\\in[a,b]\\\\\nL=\\int_{a}^{b}\\sqrt{1+\\left(\\frac{d}{dx}f(x)\\right)^2}\\space dx\\end{gather}",
+            "comment": "Felírható az y tengelyre is. Remélem emlékszel hogy d/dx deriválást jelent, ami ugye y tengelyre d/dy lenne."
+        },
+        {
+            "title": "Polárkoordinátás görbékre",
+            "function": "\\begin{gather}r=r(\\phi)\\space,\\quad\\phi_1\\leq\\phi\\leq\\phi_2 \\\\\nL=\\int_{\\phi_1}^{\\phi_2}\\sqrt{(\\dot{r}(\\phi))^2+(r(\\phi))^2}\\space d\\phi\\end{gather}"
         }
     ]
 }
