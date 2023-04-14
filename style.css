@@ -1,7 +1,7 @@
 /* Loading */
 
 :root {
-    --load-length: 0.1s;
+    --load-length: 1s;
 }
 
 @keyframes div-loading {
