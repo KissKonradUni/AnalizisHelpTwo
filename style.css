@@ -1,0 +1,126 @@
+/* Loading */
+
+@keyframes div-loading {
+    0% {
+        background-position: 0;
+        opacity: 1;
+    }
+    90% {
+        background-position: 5rem;
+        opacity: 1;
+    } 
+    99.99% {
+        opacity: 0;
+        padding: 1rem;
+        margin: 0rem auto 0.5rem auto;
+        height: fit-content;
+    }
+    100% {
+        visibility: hidden;
+        height: 0;
+        padding: 0;
+    }
+}
+
+div.loading-marker {
+    background: linear-gradient(90deg, var(--accent-color) 0%, var(--text-color) 50%, var(--accent-color) 100%);
+    background-position: 2rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    padding: 1rem;
+    margin: 0rem auto 0.5rem auto;
+    width: fit-content;
+
+    text-align: center;
+    font-size: 2rem;
+
+    animation: div-loading 0.2s linear 0s 1 forwards;
+}
+
+@keyframes main-loading {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    opacity: 0;
+    animation: main-loading 0.25s ease-in-out 0.2s forwards;
+}
+
+header {
+    margin-bottom: 0;
+}
+
+h1 {
+    background: linear-gradient(45deg, var(--accent-color) 0%, var(--text-color) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+q {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Math custom stuff */
+
+fg-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.math-line {
+    background-color: var(--main-color);
+
+    border: 1px solid var(--dim-text-color);
+    border-radius: 0.25rem;
+
+    padding: 0.25rem 0.5rem;
+}
+
+.math-title {
+    border-bottom: 1px solid var(--dim-text-color);
+    padding-bottom: 0.25rem;
+}
+
+.math-func {
+    padding: 0.25rem 0;
+    height: fit-content;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+/* Chrome Fix */
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--shade-color);
+    border-radius: 0.25rem;
+    opacity: 0.5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--dim-text-color);
+    border-radius: 0.25rem;
+    border: 1px solid black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-color);
+}

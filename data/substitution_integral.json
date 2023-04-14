@@ -1,0 +1,44 @@
+{
+    "title": "Helyettesítéses integrál",
+    "collection": [
+        {
+            "title": "Általános alak",
+            "function": "\\int f(g(x))\\cdot g'(x)\\space x=\\begin{cases} g(x)=t\\\\\ng'(x)dx=dt\\end{cases}\\bigg\\}=F(t) + c=F(g(x)) + c",
+            "comment": "<q> F </q> a primitív függvényét jelenti <q> f </q>-nek."
+        },
+        {
+            "title": "Példa",
+            "function": "\\begin{gather}\\int\\sqrt{3x + 8}=\\left\\{\\begin{split}3x + 8 = t\\\\\n3x = t - 8\\\\\n3dx=dt\\\\\ndx=\\frac{1}{3}dt\\end{split}\\right\\}=\\int\\sqrt{t}\\space\\frac{1}{3}dt=\\frac{1}{3}\\cdot\\frac{t^{\\frac{3}{2}}}{\\frac{3}{2}}+c=\\frac{2}{9}(3x+8)^\\frac{3}{2}+c\\\\\n\\end{gather}",
+            "comment": "Ezt helyettesítés nélkül is meg lehet oldani."
+        },
+        {
+            "title": "Fontosabb helyettesítések (1)",
+            "function": "\\int \\cos x\\cdot f(\\sin x)\\space dx=\\left\\{\\begin{split}\\sin x=t\\\\\n\\cos x\\space dx=dt\\end{split}\\right\\}=\\int f(t)\\space dt"
+        },
+        {
+            "title": "Fontosabb helyettesítések (2)",
+            "function": "\\int \\sin x\\cdot f(\\cos x)\\space dx=\\left\\{\\begin{split}\\cos x=t\\\\\n-\\sin x\\space dx=dt\\\\\n\\sin x\\space dx=-dt\\end{split}\\right\\}=-\\int f(t)\\space dt"
+        },
+        {
+            "title": "Fontosabb helyettesítések (3)",
+            "function": "\\int e^x\\cdot f(e^x)\\space dx=\\left\\{\\begin{split}e^x=t\\\\\ne^x\\space dx=dt\\end{split}\\right\\}=\\int f(t)\\space dt"
+        },
+        {
+            "title": "Fontosabb helyettesítések (4)",
+            "function": "\\int f(e^x)\\space dx=\\left\\{\\begin{split}e^x=t\\\\\nx=\\ln t\\\\\ndx=\\frac{1}{t}dt\\end{split}\\right\\}=\\int f(t)\\cdot\\frac{1}{t}dt"
+        },
+        {
+            "title":"Fontosabb helyettesítések (5)",
+            "function": "\\int f(\\sqrt{x})\\space dx=\\left\\{\\begin{split}\\sqrt{x}=t\\\\\nx=t^2\\\\\ndx=2t\\space dt\\end{split}\\right\\}=\\int f(t)\\cdot 2t\\space dt=2\\int t\\cdot f(t)\\space dt",
+            "comment": "Mint az előbbi 5 példában látható, legtöbb esetben a <q> t - dt </q> váltás deriválást jelent mindkét oldalon. Még van egy pár, de azokat nagyon sokáig tartana kigépelni, füzetvázlat megsegítsen ismét.<br><q> May the notes guide thee... </q>"
+        },
+        {
+            "title": "Random példa (1)",
+            "function": "\\begin{gather}\\int \\sqrt{a^2-x^2}\\space dx=\\left\\{\\begin{split}x=a\\cdot\\sin t\\\\\ndx=a\\cdot\\cos t\\space dt\\end{split}\\right\\}=\\int\\sqrt{a^2-a^2\\cdot\\sin^2 t}\\cdot\\cos t\\space dt=\\\\\n\\int\\sqrt{a^2\\cdot(1-sin^2 t)}\\cdot a\\cdot\\cos t\\space dt=\\int a^2\\cdot \\cos^2 t\\space dt=\\\\\n=\\text{Linearizálással befejezhető...}\\end{gather}"
+        },
+        {
+            "title": "Random példa (2)",
+            "function": "\\int \\frac{e^x}{1+e^2x}\\space dx=\\left\\{\\begin{split}e^x=t\\\\\ne^x\\space dx=dt\\end{split}\\right\\}=\\int\\frac{1}{1+t^2}\\space dt=\\text{arctg }t + c=\\text{arctg }e^x + c"
+        }
+    ]
+}

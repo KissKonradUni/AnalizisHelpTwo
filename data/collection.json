@@ -1,0 +1,16 @@
+{
+    "collection": [
+        "primitive_functions.json",
+        "extra_rules.json",
+        "partial_derivatives.json",
+        "linearization_formulas.json",
+        "substitution_integral.json",
+        "rational_fraction_integrals.json",
+        "2d_area_integrals.json",
+        "curve_lengths.json",
+        "volume_integrals.json",
+        "3d_area_integrals.json",
+        "improper_integrals.json",
+        "comparisons.json"
+    ]
+}

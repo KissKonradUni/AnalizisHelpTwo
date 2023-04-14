@@ -1,0 +1,49 @@
+{
+    "title": "Linearizációs formulák",
+    "collection": [
+        {
+            "title": "Általános képletek (1)",
+            "function": "\\sin^2 x + \\cos^2 x = 1"
+        },
+        {
+            "title": "Általános képletek (2)",
+            "function": "\\sin^2 x - \\cos^2 x = \\cos 2x"
+        },
+        {
+            "title": "Általános képletek (3)",
+            "function": "2\\cos^2 x = 1 + \\cos 2x"
+        },
+        {
+            "title": "Általános képletek (4)",
+            "function": "\\sin^2 x = 1 - \\cos^2 x"
+        },
+        {
+            "title": "Koszinusz linearizálása",
+            "function": "\\cos^2 x=\\frac{1+\\cos 2x}{2}"
+        },
+        {
+            "title": "Szinusz linearizálása",
+            "function": "\\sin^2 x=\\frac{1-\\cos 2x}{2}"
+        },
+        {
+            "title": "Általános képletek (5)",
+            "function": "\\text{ch}^2\\space x - \\text{sh}^2\\space x=1"
+        },
+        {
+            "title": "Általános képletek (6)",
+            "function": "\\text{ch}^2\\space x + \\text{sh}^2\\space x=\\text{ch }2x"
+        },
+        {
+            "title": "Általános képletek (7)",
+            "function": "2\\text{ch}^2\\space x=1+\\text{ch }2x"
+        },
+        {
+            "title": "Koszinusz hiperbólikusz linearizálása",
+            "function": "\\text{ch}^2\\space x=\\frac{1+\\text{ch }2x}{2}"
+        },
+        {
+            "title": "Szinusz hiperbólikusz linearizálása",
+            "function": "\\text{sh}^2\\space x=\\frac{\\text{ch }2x - 1}{2}"
+        }
+    ]
+}

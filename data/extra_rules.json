@@ -1,0 +1,33 @@
+{
+    "title": "Integrálási szabályok",
+    "collection": [
+        {
+            "title": "Felbontás és szorzatkiemelés",
+            "function": "\\begin{gather}\n\\text{Ha létezik: }\\\\\n\\int f(x)\\space dx\\\\\n\\int g(x)\\space dx\\\\\n p,q \\in \\mathbb{R}\\\\\n\\\\\n \\text{Akkor: }\\\\\n\\int (p\\cdot f(x))+(q\\cdot g(x))\\space dx=p\\int f(x) \\space dx + q\\int g(x)\\space dx\\end{gather}"
+        },
+        {
+            "title": "<q> f </q>-szer <q> f ' </q> (Függvény szorozva deriválttal, gyakorlatilag általános alak)",
+            "function": "\\int f^n(x)\\cdot f'(x)\\space dx=\\frac{f^{n+1}(x)}{n+1} + c\\quad n \\neq -1"
+        },
+        {
+            "title": "Példák az előzőre",
+            "function": "\\begin{gather}\\\\\n\\int\\frac{1}{x\\cdot\\ln^2 x}\\space dx=\\int (\\ln x)^{-2}\\cdot\\frac{1}{x}\\space dx=\\frac{(\\ln x)^{-1}}{-1} + c=-\\frac{1}{\\ln x} + c\\quad n=-2 \\\\\n\\int\\sqrt{x+3}\\space dx=\\int 1\\cdot\\sqrt{x+3}\\space dx=\\frac{(x+3)^{\\frac{3}{2}}}{\\frac{3}{2}}+c=\\frac{2}{3}\\cdot (x+3)^{\\frac{3}{2}} + c\\quad n=\\frac{1}{2}\\end{gather}"
+        },
+        {
+            "title": "<q> f ' </q> osztva <q> f </q> (Derivált osztva a függvényével)",
+            "function": "\\int\\frac{f'(x)}{f(x)} dx=\\ln|f(x)| + c"
+        },
+        {
+            "title": "Példák az előzőre",
+            "function": "\\begin{gather}\\\\\n\\int \\frac{1}{x+1}dx = \\ln{|x+1|} + c\\\\\n\\int \\frac{1}{x\\cdot\\ln x}dx=\\int\\frac{\\frac{1}{x}}{\\ln x}dx=\\ln{|(\\ln{x})|}+c\\end{gather}"
+        },
+        {
+            "title": "Lineáris egyenlet integráltja (<q> f </q> a függvény, <q> F </q> a primitíve)",
+            "function": "\\int f(ax+b)\\space dx=\\frac{F(ax + b)}{a} + c"
+        },
+        {
+            "title": "Példa az előzőre",
+            "function": "\\int \\cos{(5x + 4)}\\space dx=\\frac{\\sin{(5x + 4)}}{5} + c"
+        }
+    ]
+}

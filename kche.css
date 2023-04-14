@@ -1,0 +1,119 @@
+/* Usual stuff */
+
+:root {
+    --main-color: #1f1b18;
+    --shade-color: #0f0c08;
+    --highlight-color: #2f2b28;
+    --accent-color: #cf9040;
+    --text-color: #dddddd;
+    --dim-text-color: #888888;
+    --common-shadow: 0 0 0.5rem #00000088;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    min-height: 100vh;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--shade-color);
+    color: var(--text-color);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 0.5rem;
+}
+
+header, footer, main {
+    background-color: var(--main-color);
+
+    margin: 0rem 0.5rem 0.5rem 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+
+    box-shadow: var(--common-shadow);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0 0.25em;
+}
+
+.flex-spacer {
+    flex: 1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Custom elements: Fold Group */
+
+fold-group {
+    display: block;
+    height: fit-content;
+
+    background-color: var(--highlight-color);
+    border-radius: 0.5rem;
+    box-shadow: var(--common-shadow);
+
+    overflow: hidden;
+}
+
+fg-content {
+    display: block;
+    overflow: hidden;
+    height: fit-content;
+
+    transition: 0.05s padding ease-in-out;
+}
+
+fg-content[state="closed"] {
+    max-height: 0;
+    padding: 0 0.5rem;
+}
+
+fg-content[state="open"] {
+    border-top: 1px solid var(--dim-text-color);
+
+    max-height: 200rem;
+    padding: 0.5rem;
+}
+
+.fg-header {
+    all: initial;
+
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--text-color);
+    background-color: var(--highlight-color);
+    padding: 0.4rem 0.6rem;
+
+    border: 0.1rem solid transparent;
+    border-radius: 0.5rem;
+
+    user-select: none;
+
+    transition: 0.1s border linear, 0.1s filter ease-in-out;
+}
+
+.fg-header:focus {
+    border: 0.1rem solid var(--accent-color);
+}
+
+.fg-header:hover {
+    filter: brightness(1.4);
+}
+
+.fg-header:active {
+    filter: brightness(0.8);
+}
+
+/* Buttons */

@@ -1,0 +1,73 @@
+{
+    "title": "Primitív függvények",
+    "collection": [
+        {
+            "title": "Általános alak",
+            "function": "x^{n}\\Rightarrow\\frac{x^{n+1}}{{n+1}}\\quad\\text{Szélső eset:}\\space 1=x^0\\Rightarrow\\frac{x^1}{1}=x\\quad (n\\neq -1)"
+        },
+        {
+            "title": "Tört",
+            "function": "\\frac{1}{x}\\Rightarrow\\ln{|x|}"
+        },
+        {
+            "title": "Éad xd",
+            "function": "e^x\\Rightarrow e^x"
+        },
+        {
+            "title": "Valós szám az x-edik hatványon",
+            "function": "a^x\\Rightarrow\\frac{a^x}{\\ln{a}}\\quad,\\quad a\\in \\mathbb{R}^+\\backslash \\{1\\}"
+        },
+        {
+            "title": "Szinusz",
+            "function": "\\sin{x}\\Rightarrow -\\cos{x}"
+        },
+        {
+            "title": "Koszinusz",
+            "function": "\\cos{x}\\Rightarrow \\sin{x}"
+        },
+        {
+            "title": "Koszinusz négyzet reciproka",
+            "function": "\\frac{1}{\\cos^2{x}}\\Rightarrow \\text{tg }{x}"
+        },
+        {
+            "title": "Szinusz négyzet reciproka",
+            "function": "\\frac{1}{\\sin^2{x}}\\Rightarrow -\\text{ctg }{x}"
+        },
+        {
+            "title": "Szinusz hiperbolikusz",
+            "function": "\\text{sh }x\\Rightarrow\\text{ch }x"
+        },
+        {
+            "title": "Koszinusz hiperbolikusz",
+            "function": "\\text{ch }x\\Rightarrow\\text{sh }x"
+        },
+        {
+            "title": "Koszinusz hiperbolikusz négyzet reciproka",
+            "function": "\\frac{1}{\\text{ch}^2\\space x}\\Rightarrow\\text{th }x"
+        },
+        {
+            "title": "Szinusz hiperbolikusz négyzet reciproka",
+            "function": "\\frac{1}{\\text{sh}^2\\space x}\\Rightarrow\\text{cth }x"
+        },
+        {
+            "title": "Arkusz-szinusz deriváltja (Koszinuszra nincs)",
+            "function": "\\frac{1}{\\sqrt{1-x^2}}\\Rightarrow\\text{arcsin }x"
+        },
+        {
+            "title": "Arkusz-tangens deriváltja",
+            "function": "\\frac{1}{1-x^2}\\Rightarrow\\text{arctan }x"
+        },
+        {
+            "title": "Área-szinusz hiperbólikusz deriváltja",
+            "function": "\\frac{1}{\\sqrt{x^2-1}}\\Rightarrow\\text{arsh }x"
+        },
+        {
+            "title": "Área-koszinusz hiperbólikusz deriváltja",
+            "function": "\\frac{1}{\\sqrt{x^2+1}}\\Rightarrow\\text{arch }x"
+        },
+        {
+            "title": "Área-tangens hiperbólikusz páros deriváltja",
+            "function": "\\frac{1}{1-x^2}\\Rightarrow\n\\begin{cases}\n\\text{arth } x,\\; \\text{ha }|x| < 1\\\\\n\\text{arcth } x, \\text{ha }|x| > 1\\\\\n\\end{cases}"
+        }
+    ]
+}

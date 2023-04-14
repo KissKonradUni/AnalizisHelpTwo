@@ -1,0 +1,25 @@
+{
+    "title": "Parciális integrál",
+    "collection": [
+        {
+            "title": "Alaptétel",
+            "function": "\\begin{gather}\\int u'(x)\\cdot v(x) dx = u(x)\\cdot v(x) - \\int u(x)\\cdot v'(x) dx\\\\\n\\text{vagy}\\\\\n\\int u(x)\\cdot v'(x) dx = u(x)\\cdot v(x) - \\int u'(x)\\cdot v(x) dx\\end{gather}",
+            "comment": "Általában azt próbáld meg <q> v </q>-nek venni, amit integrálni nem tudnál, de deriválni talán. Az is elég fontos, hogy ez az integrálási fajta ilyen utolsó lehetőség, nem akarod használni ha nem muszály. A példákban a felkiátójel (!) a képlettől vett adatokat jelzi, rendes használatnál általában keretezzük."
+        },
+        {
+            "title": "Fokszámcsökkentés <q> (polinom * trigo./hyperb./exp.) </q>",
+            "function": "\\begin{gather}\\int x\\cdot \\sin x\\space dx=\\begin{cases}(!)u = x\\quad\\quad\\quad\\quad\\space u' = 1\\\\\n\\quad v=-\\cos x\\quad (!)v' = \\sin x\\end{cases}\\bigg\\} = x \\cdot -\\cos x - \\int 1\\cdot -\\cos x\\space dx=\\\\\n=-x\\cos x + \\int\\cos x\\space dx=-x\\cos x + \\sin x + c\\end{gather}",
+            "comment": "Ezt egy példával mutatom be (ahol a második sora van használva az alaptételnek), az ilyen alakúaknál a polinomot deriváljuk le, és a második fél primitívjét keressük meg."
+        },
+        {
+            "title": "Fokszámnövelés <q> (polinom * arkusz./área./log.) </q>",
+            "function": "\\begin{gather}\\int \\ln x\\space dx=\\int 1\\cdot\\ln x\\space dx=\\begin{cases}(!)u = \\ln x\\quad\\quad\\space u' = \\frac{1}{x}\\\\\n\\quad v=x\\quad\\;\\;\\quad (!)v' = 1\\end{cases}\\bigg\\} = \\ln x \\cdot x - \\int \\frac{1}{x}\\cdot x\\space dx=\\\\\n=x\\ln x - \\int\\frac{x}{x}\\space dx=x\\ln x - x + c\\end{gather}",
+            "comment": "Ezt is egy példával mutatom be (ahol a második sora van használva az alaptételnek), az ilyen alakúaknál a függvényt deriváljuk le, és az első fél primitívjét keressük meg. A függvény hatványkitevője megmutatja hogy hányszor kell elvégezni ezt egymás után."
+        },
+        {
+            "title": "Cirkuláris <q> (exp./trigo./hyperb. * exp./trigo./hyerpb.) </q>",
+            "function": "\\text{Ezt nem gépelem be. Füzetvázlat, indian yt guy vagy valami segítsen ki. 🙏}",
+            "comment": "Ilyen integrálásnál 2x kell egymás után elvégezni a parciális részt ahhoz, hogy a majd kapott egyenletből a határozatlan integrált ki lehessen fejezni. Ügyeljünk a fennmaradó konstansokra."
+        }
+    ]
+}
