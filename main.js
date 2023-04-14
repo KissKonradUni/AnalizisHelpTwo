@@ -2,9 +2,9 @@ let dataList = {};
 let dataFiles = [];
 
 async function main() {
-    dataList = await (await fetch("/data/collection.json")).json();
+    dataList = await (await fetch("data/collection.json")).json();
     for (const file of dataList["collection"]) {
-        const json = await (await fetch(`/data/${file}`)).json();
+        const json = await (await fetch(`data/${file}`)).json();
         dataFiles.push(
             json
         );
