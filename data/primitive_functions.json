@@ -55,7 +55,7 @@
         },
         {
             "title": "Arkusz-tangens deriváltja",
-            "function": "\\frac{1}{1-x^2}\\Rightarrow\\text{arctan }x"
+            "function": "\\frac{1}{1+x^2}\\Rightarrow\\text{arctan }x"
         },
         {
             "title": "Área-szinusz hiperbólikusz deriváltja",
